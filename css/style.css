@@ -2,11 +2,15 @@
   font-family: "Montserrat", sans-serif;
   line-height: 1.3rem;
   font-weight: 200;
+  box-sizing: border-box;
 }
 
-#background {
-  background-image: url("../imgs/mountain_blur.jpg");
+body {
+  background-image: url("../imgs/mountain_blur.jpg") !important;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: local;
 }
 
 #header {
@@ -56,6 +60,7 @@
 #content p {
   font-size: 18px;
   line-height: 1.7rem;
+  text-align: left;
 }
 
 #content a {
@@ -79,4 +84,17 @@
 
 #work {
   background-color: #fff;
+}
+
+@media only screen and (max-width: 640px) {
+  #content {
+    padding: 0;
+  }
+
+  #header,
+  #education,
+  #work,
+  #language {
+    padding: 3rem 1rem 3rem 2rem;
+  }
 }
