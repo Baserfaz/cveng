@@ -98,3 +98,34 @@ body {
     padding: 3rem 1rem 3rem 2rem;
   }
 }
+
+@media print {
+  #header,
+  #education,
+  #work,
+  #language {
+    padding: 0rem;
+  }
+
+  #language {
+    box-shadow: none;
+  }
+
+  #links {
+    visibility: hidden;
+  }
+
+  #content p {
+    font-size: 12px;
+    line-height: 1rem;
+  }
+
+  #content h1 {
+    font-size: 16px;
+  }
+
+  #content h2 {
+    font-size: 14px;
+    padding-bottom: 1rem;
+  }
+}
